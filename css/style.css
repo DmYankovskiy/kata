@@ -1,0 +1,482 @@
+html {
+    box-sizing: border-box
+}
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-weight: 300;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+body {
+    background-color: #1D1D1D;
+    font-family: 'Signika Negative', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.header_top {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 300px;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+}
+.menu-list_item {
+    transition: all 0.5s;
+    border-bottom: 2px solid transparent;
+}
+.menu-list_item:hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+.menu-list_link {
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+}
+.phone-list_item {
+    margin-bottom: 6px;
+    transition: all 0.3s;
+}
+
+.phone-list_item:hover {
+    opacity: 80%;
+}
+.phone-list_link {
+    font-size: 22px;
+    line-height: 34px;
+}
+.header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.header_title {
+    font-size: 61px;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.header_title span {
+    font-size: 66px;
+    font-weight: 700;
+}
+.header_text {
+    font-size: 37px;
+    line-height: 46px;
+    margin-bottom: 40px;
+}
+.header_btn {
+    display: block;
+    padding: 25px;
+    margin: 0 auto;
+    font-size: 37px;
+    line-height: 46px;
+    width: 360px;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.29);
+    transition: all 0.5s;
+}
+.header_btn:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+.title {
+    display: inline-block;
+    padding: 75px 0 40px;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.transportation_title,
+.products_title {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info {
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+}
+.about {
+    background-image: url(../images/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.about_info {
+    position: relative;
+    font-size: 40px;
+    line-height: 45px;
+    padding: 230px 0 280px;
+}
+.about_info span {
+    font-size: 40px;
+    font-weight: 700;
+}
+.transportation {
+    background-image: url(../images/transportation-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+.transportation_info {
+    padding: 230px 0 280px;
+}
+
+.procedure-img {
+    width: 100%;
+    height: auto;
+}
+.title {
+    display: inherit;
+    text-align: center;
+}
+.gallery_list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+.gallery_item {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 600px;
+}
+.gallery_img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+}
+.products{
+    background-image: url(../images/products-bg.svg);
+    background-position: center left;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.products_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 50px;
+}
+.products_info-list {
+    padding-left: 30px;
+}
+.products__info-item {
+    margin-bottom: 25px;
+    margin-right: 10px;
+    font-size: 30px;
+    line-height: 34px;
+}
+.products_images {
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 533px;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    color: #1D1D1D;
+}
+
+.footer_inner {
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top center;
+}
+.footer_info {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_address {
+    font-size: 30px;
+    line-height: 31px;
+}
+
+.footer_phone-list_link {
+    font-size: 30px;
+    line-height: 31px;
+    color: #1D1D1D;
+}
+
+.footer_services {
+    margin: 80px 0 133px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.google_maps {
+    max-width: 500px;
+    margin-right: 10px;
+}
+.footer_form {
+    position: relative;
+    padding-bottom: 50px;
+}
+.footer_form-title{
+    font-size: 35px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer_form-name {
+    width: 474px;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.footer_form-phone {
+    width: 474px;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.footer_form-message {
+    width: 474px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0);
+}
+.footer_form-btn {
+    position: absolute;
+    font-size: 35px;
+    line-height: 36px;
+    width: 266px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: -26px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.footer_form-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer_copyrigt {
+    text-align: center;
+    font-size: 12px;
+}
+@media (max-width: 1400px) {
+    .header_top {
+        margin-bottom: 200px;
+    }
+    .gallery_item:hover {
+        transform: scale(1);
+    }
+}
+@media (max-width: 1000px) {
+    .header_top {
+        margin-bottom: 200px;
+    }
+    .about_info-top {
+        padding-top: 150px;
+    }
+    .transportation_info {
+        padding-top: 150px;
+    }
+    .footer_info {
+        margin-top: 15px;
+    }
+    .footer_services {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 930px) {
+    .menu-list {
+        flex-direction: column; 
+        max-width: 100px;  
+    }
+    .gallery_list {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .title{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .header_title {
+        font-size: 45px;
+    }
+    .header_title span {
+        font-size: 55px;
+    }
+    .header_text {
+        font-size: 30px;
+    }
+    .about_info {
+        font-size: 25px;
+    }
+    .transportation_info {
+        font-size: 25px;
+    }
+    .products_inner {
+        flex-direction: column;
+    }
+    .products__info-item{
+        font-size: 24px;
+    }
+    .products_info-list {
+        text-align: center;
+    }
+    .footer_services {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .footer_form {
+        margin: 20px;
+        padding-bottom: 60px;
+    }
+}
+@media (max-width: 630px) {
+    .gallery_item {
+        width: 100%;
+    }
+}
+@media (max-width: 620px) {
+    .gallery_item {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-list {
+        align-items: flex-start;
+    }
+    .logo {
+        display: none;
+    }
+    .footer_info {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer_address {
+        margin-bottom: 15px;
+    }
+    
+}
+@media (max-width: 570px) {
+    .google_maps {
+        width: 400px;
+    }
+}
+
+@media (max-width: 490px) {
+    .header_text {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .google_maps {
+        width: 300px;
+    }
+    .footer_form-name {
+        width: 300px;
+    }
+    .footer_form-phone {
+        width: 300px;
+    }
+    .footer_form-message {
+        width: 300px;
+    }
+    .about_info {
+        font-size: 20px;
+        padding: 150px 0 80px;
+    }
+    .transportation_info {
+        font-size: 20px;
+        padding: 150px 0 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_top {
+        margin-bottom: 100px;
+        padding-top: 20px;
+    }
+    .phone-list_link {
+        font-size: 16px;
+    }
+    .header_title  {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .header_title span {
+        font-size: 30px;
+    }
+    .header_text {
+        font-size: 25px;
+    }
+    .header_btn {
+        font-size: 30px;
+        width: 287px; 
+    }
+    .about_info {
+        font-size: 17px;
+        padding: 100px 0 60px;
+    }
+    .transportation_info {
+        font-size: 17px;
+        padding: 100px 0 60px;
+    }
+    .products_info-list {
+        text-align: start;
+    }
+    .about{
+        padding: 30px 0 30px;
+    }
+    .transportation_info {
+        padding: 30px 0 30px;
+    }
+    .products_images {
+        width: 300px;
+    }
+    .google_maps {
+        padding-left: 10px;
+    }
+}
